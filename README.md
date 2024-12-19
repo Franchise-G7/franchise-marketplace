@@ -201,7 +201,7 @@ Powered by **Laravel**, the back end ensures robust authentication, database man
 ---
 
 ### **Usage**
-- Access the application via your browser at `http://localhost/franchise-directory/public`.
+- Access the application via your browser at `http://localhost/franchise-directory/public'
 - Login or register as a franchisor or franchisee to explore the platform.
 
 ---
