@@ -1,5 +1,5 @@
 
-GET http://127.0.0.1:8000/storage-debug
+GET http://127.0.0.1:8000/storage/photot.jpg
 
 ###
-GET http://127.0.0.1:8000/storage/127.0.0.1:8000/storage/profile_images/iGc0eWA0fjyjyoC0Ih2ZgEncMbSbAHFsZQ5eELeX.png
+GET http://127.0.0.1:8000/storage/profile_images/x3b3YlK9K7uCSLOSgrCP1aUoDI8dvLdX9AeKFQH4.jpg

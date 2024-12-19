@@ -22,13 +22,20 @@ Route::get('/dashboard', function () {
     $imagePath = $user->images->first()?->image_path;
     
     if ($imagePath && !Storage::disk('public')->exists($imagePath)) {
-        $imagePath = 'photo.jpg'; 
+        $img = $imagePath;
+        $imagePath = 'photo.jpg';
+
+    }
+
+    if ($user->user_role == 'franchisee') {
+        return redirect()->route('franchiseeDashboard');
     }
 
     return Inertia::render('Dashboard', [
         'auth' => [
             'user' => $user,
-            'imagePath' => $imagePath
+            'imagePath' => $imagePath,
+            "img" => $img ?? null,
         ],
     ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
